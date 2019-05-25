@@ -1,14 +1,13 @@
 
-import {JSS_nano} from "../src";
+import {jss_nano} from "../src";
 
 
 describe('it returns the expected values', () => {
 
-    const jss = JSS_nano();
 
-    it('should return the utility as a function when invoked', () => {
+    it('should be a function', () => {
 
-        expect(typeof jss === 'function').toBe(true);
+        expect(typeof jss_nano === 'function').toBe(true);
     });
 
     const styles = {
@@ -27,7 +26,7 @@ describe('it returns the expected values', () => {
 
     it('should return the classNames as the object they were defined in ', ()=>{
 
-        const classes = jss(styles);
+        const classes = jss_nano(styles);
 
         expect(classes).toMatchObject({
             container: 'x0 x1 x2 x3',

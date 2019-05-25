@@ -4,6 +4,9 @@ module.exports = {
     esModules: true,
     umd: {
       global: 'jss_nano',
+      externals: {
+        react: 'React'
+      }
     }
   },
   devServer:{
