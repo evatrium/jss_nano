@@ -1,3 +1,4 @@
+import {jss_nano} from "../../src";
 import {ThemedClasses} from "../../src/ThemedClasses";
 
 const color = {
@@ -30,5 +31,5 @@ export const theme = {
     mixins
 };
 
-export const withClasses = ThemedClasses(theme);
+export const withClasses = ThemedClasses(theme, jss_nano);
 
