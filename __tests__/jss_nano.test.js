@@ -33,7 +33,7 @@ describe('it returns the expected values', () => {
             box: 'x4 x5 x6'
         });
 
-        const styleElement = document.head.querySelector('style')
+        const styleElement = document.head.querySelector('style');
 
         expect(styleElement.sheet.cssRules.length).toBe(7)
 

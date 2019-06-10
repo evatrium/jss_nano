@@ -58,21 +58,17 @@ const insertFast = rule => {
     styleElement.sheet.insertRule(rule, styleElement.sheet.cssRules.length);
 };
 
-
 const insertDevToolsFriendly = rule => {
     rules.push(rule);
     styleElement.appendChild(d.createTextNode(rule))
 };
 
-
 insert = process.env.NODE_ENV === 'development' ? insertDevToolsFriendly : insertFast;
-
 
 const jssToCss_ = (...styles) => {
     return styles.map(style => parse(style))
         .join(' ').trim()
 };
-
 
 export const getCss = () => rules.sort().join('');
 
