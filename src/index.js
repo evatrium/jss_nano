@@ -1,4 +1,5 @@
 import {prefixPV} from "./prefixPV";
+export {cn} from "./classNames";
 
 let rules = [],
 
